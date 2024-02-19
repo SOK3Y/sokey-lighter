@@ -5,6 +5,6 @@ ESX.RegisterUsableItem('lighter', function(player)
     TriggerClientEvent('sokey-lighterUsed', player)
 end)
 
-RegisterServerEvent('sokey-lighterUsed', function(coords, chuj, chuj)
+RegisterServerEvent('sokey-lighterUsed', function(coords)
     TriggerClientEvent('sokey-lighterFire', -1, coords)
 end)
